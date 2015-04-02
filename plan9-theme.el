@@ -81,7 +81,7 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(default ((t (:foreground ,fg :background ,bg))))
    `(cursor ((t (:foreground ,bg :background ,fg))))
    `(escape-glyph ((t (:foreground ,cyan-light :bold t))))
-   `(fringe ((t (:foreground ,purple :background ,purple-light))))
+   `(fringe ((t (:foreground ,green :background ,green-light))))
    `(header-line ((t (:foreground ,purple
                                   :background ,purple-light
                                   :box (:line-width -1 :style released-button)))))
@@ -149,8 +149,8 @@ Also bind `class' to ((class color) (min-colors 89))."
    ;;   ((t (:foreground ,nephritis :background ,clouds :inverse-video nil))))
    ;; `(ace-jump-face-foreground
    ;;   ((t (:foreground ,nephritis :background ,clouds :inverse-video nil))))
-;;;;; anzu
-   ;; `(anzu-mode-line ((t (:foreground ,turquoise :weight bold))))
+;;;; anzu
+   `(anzu-mode-line ((t (:foreground ,fg :weight bold))))
 ;;;;; auto-complete
    ;; `(ac-candidate-face ((t (:background ,concrete :foreground ,midnight-blue))))
    ;; `(ac-selection-face ((t (:background ,asbestos :foreground ,midnight-blue))))
@@ -163,10 +163,10 @@ Also bind `class' to ((class color) (min-colors 89))."
    ;; `(bm-fringe-face ((t (:background ,zenburn-yellow-1 :foreground ,zenburn-bg))))
    ;; `(bm-fringe-persistent-face ((t (:background ,zenburn-green-1 :foreground ,zenburn-bg))))
    ;; `(bm-persistent-face ((t (:background ,zenburn-green-1 :foreground ,zenburn-bg))))
-;;;;; clojure-test-mode
-   ;; `(clojure-test-failure-face ((t (:foreground ,carrot :weight bold :underline t))))
-   ;; `(clojure-test-error-face ((t (:foreground ,alizarin :weight bold :underline t))))
-   ;; `(clojure-test-success-face ((t (:foreground ,emerald :weight bold :underline t))))
+;;;; clojure-test-mode
+   `(clojure-test-failure-face ((t (:foreground ,red :weight bold :underline t))))
+   `(clojure-test-error-face ((t (:foreground ,red :weight bold :underline t))))
+   `(clojure-test-success-face ((t (:foreground ,green :weight bold :underline t))))
 ;;;; diff
    `(diff-added ((,class (:foreground ,fg :background ,green-light))
                  (t (:foreground ,fg :background ,green-light))))
@@ -270,8 +270,8 @@ Also bind `class' to ((class color) (min-colors 89))."
    ;; `(eshell-ls-symlink ((t (:foreground ,clouds :background ,amethyst))))
   ;;;;; evil
    `(evil-search-highlight-persist-highlight-face ((t (:inherit lazy-highlight))))
-;; ;;;;; flx
-;;    `(flx-highlight-face ((t (:foreground ,orange :weight bold))))
+;;;;; flx
+   `(flx-highlight-face ((t (:foreground ,yellow :weight bold))))
 ;;;; flycheck
    `(flycheck-error
      ((((supports :underline (:style wave)))
@@ -436,23 +436,23 @@ Also bind `class' to ((class color) (min-colors 89))."
                            :box (:line-width -1 :style released-button)))
       (t :inverse-video t)))
    `(mode-line-inactive
-     ((t (:foreground ,fg
+     ((t (:foreground ,fg-light
                       :background ,cyan
-                      :box (:line-width -1 :style released-button)))))
+                      :box (:line-width -1 :style pressed-button)))))
    `(mode-line-buffer-id ((t (:foreground ,red :weight bold))))
    `(sml/global ((t (:foreground ,fg))))
-   `(sml/modes ((t (:foreground ,fg))))
+   `(sml/modes ((t (:foreground ,green :background ,green-light))))
    `(sml/filename ((t (:foreground ,fg))))
    `(sml/folder ((t (:foreground ,fg))))
    `(sml/prefix ((t (:foreground ,fg))))
    `(sml/read-only ((t (:foreground ,fg))))
-   `(sml/modified ((t (:foreground ,fg :weight bold))))
+   `(sml/modified ((t (:foreground ,red :weight bold))))
    `(sml/outside-modified ((t (:background ,red
                                :foreground ,red-light :weight bold))))
    `(sml/line-number ((t (:foreground ,fg :weight bold))))
    `(sml/col-number ((t (:foreground ,fg :weight bold))))
    `(sml/vc ((t (:foreground ,fg :weight bold))))
-   `(sml/vc-edited ((t (:foreground ,fg :weight bold))))
+   `(sml/vc-edited ((t (:foreground ,red :weight bold))))
    `(sml/git ((t (:foreground ,fg :weight bold))))
 ;; ;;;;; SLIME
 ;;    `(slime-repl-output-face ((t (:foreground ,midnight-blue))))
@@ -535,8 +535,8 @@ Also bind `class' to ((class color) (min-colors 89))."
 ;;    `(whitespace-indentation ((t (:background ,clouds :foreground ,sun-flower))))
 ;;    `(whitespace-empty ((t (:background ,orange))))
 ;;    `(whitespace-space-after-tab ((t (:background ,clouds :foreground ,alizarin))))
-;; ;;;;; which-func-mode
-;;    `(which-func ((t (:foreground ,wisteria :background ,silver))))
+;;;;; which-func-mode
+   `(which-func ((t (:foreground ,purple :background ,purple-light))))
 ;; ;;;;; yascroll
 ;;    `(yascroll:thumb-text-area ((t (:background ,silver))))
 ;;    `(yascroll:thumb-fringe ((t (:background ,silver :foreground ,sun-flower))))

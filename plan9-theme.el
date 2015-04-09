@@ -371,7 +371,7 @@ Also bind `class' to ((class color) (min-colors 89))."
 ;;;;; indent-guide
    `(indent-guide-face ((t (:foreground ,highlight))))
 ;;;;; js2-mode
-   `(js2-warning ((t (:underline ,red))))
+   `(js2-warning ((t (:underline ,yellow))))
    `(js2-error ((t (:foreground ,red :weight bold))))
    `(js2-jsdoc-tag ((t (:foreground ,purple))))
    `(js2-jsdoc-type ((t (:foreground ,blue))))

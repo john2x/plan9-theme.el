@@ -13,6 +13,10 @@ Install
 1. Copy `plan9-theme.el` to your `custom-themes-load-path` directory.
 2. Load the theme `(load-theme 'plan9)`
 
+### MELPA
+
+This theme is also available on [MELPA][http://melpa.org] as `plan9-theme`.
+
 Screenshots
 -----------
 

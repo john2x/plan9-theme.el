@@ -15,7 +15,7 @@ Install
 
 ### MELPA
 
-This theme is also available on [MELPA][http://melpa.org] as `plan9-theme`.
+This theme is also available on [MELPA](http://melpa.org) as `plan9-theme`.
 
 Screenshots
 -----------

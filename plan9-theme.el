@@ -386,7 +386,7 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(magit-branch ((t (:foreground ,fg :background ,yellow-light
                                    :weight bold
                                    :box (:line-width 1 :color ,yellow)))))
-   `(magit-item-highlight ((t (:background ,highlight))))
+   `(magit-item-highlight ((t (:background ,bg-alt))))
    `(magit-log-author ((t (:foreground ,blue))))
    `(magit-log-sha1 ((t (:foreground ,yellow :weight bold))))
    `(magit-tag ((t (:foreground ,purple :weight bold))))

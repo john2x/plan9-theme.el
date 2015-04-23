@@ -142,7 +142,12 @@ Also bind `class' to ((class color) (min-colors 89))."
  ;;;; ledger
    `(ledger-font-directive-face ((t (:foreground ,cyan))))
    `(ledger-font-periodic-xact-face ((t (:inherit ledger-font-directive-face))))
-   `(ledger-occur-xact-face ((t (:background ,yellow-light))))
+   `(ledger-font-posting-account-face ((t (:foreground ,blue))))
+   `(ledger-font-posting-amount-face ((t (:foreground ,red))))
+   `(ledger-font-posting-date-face ((t (:foreground ,red :weight bold))))
+   `(ledger-font-payee-uncleared-face ((t (:foreground ,purple))))
+   `(ledger-font-payee-cleared-face ((t (:foreground ,fg))))
+   `(ledger-font-payee-pending-face ((t (:foreground ,yellow))))
 ;;;; Third-party
 ;;;;; ace-jump
    ;; `(ace-jump-face-background

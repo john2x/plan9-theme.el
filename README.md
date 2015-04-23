@@ -1,9 +1,9 @@
-Plan9 Theme
+plan9-theme
 ===========
 
 This theme is a work in progress.
 
-Inspired by [Plan9][] colors.  A light alternative for that classic look.
+Inspired by [Plan 9][] colors.  A light alternative for that classic look.
 
 Install
 -------

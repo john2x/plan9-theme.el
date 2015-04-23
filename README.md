@@ -24,7 +24,7 @@ Screenshots
 ![python](https://raw.githubusercontent.com/john2x/plan9-theme.el/master/screenshots/python.png)
 ![clojure](https://raw.githubusercontent.com/john2x/plan9-theme.el/master/screenshots/clojure.png)
 
-[Plan9]: http://plan9.bell-labs.com/plan9/screenshot.html
+[Plan 9]: http://plan9.bell-labs.com/plan9/screenshot.html
 
 License
 =======

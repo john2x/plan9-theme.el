@@ -148,6 +148,7 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(ledger-font-payee-uncleared-face ((t (:foreground ,purple))))
    `(ledger-font-payee-cleared-face ((t (:foreground ,fg))))
    `(ledger-font-payee-pending-face ((t (:foreground ,yellow))))
+   `(ledger-font-xact-highlight-face ((t (:background ,bg-alt))))
 ;;;; Third-party
 ;;;;; ace-jump
    ;; `(ace-jump-face-background

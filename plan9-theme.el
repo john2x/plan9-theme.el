@@ -129,7 +129,7 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(font-lock-doc-face ((t (:foreground ,green))))
    `(font-lock-function-name-face ((t (:foreground ,fg :weight bold))))
    `(font-lock-keyword-face ((t (:foreground ,yellow))))
-   `(font-lock-negation-char-face ((t (:foreground ,blue-light :weight bold))))
+   `(font-lock-negation-char-face ((t (:foreground ,red :weight bold))))
    `(font-lock-preprocessor-face ((t (:foreground ,green :weight bold))))
    `(font-lock-regexp-grouping-construct ((t (:foreground ,red :weight bold))))
    `(font-lock-regexp-grouping-backslash ((t (:foreground ,red :weight bold))))

@@ -543,9 +543,16 @@ Also bind `class' to ((class color) (min-colors 89))."
 ;;    `(whitespace-space-after-tab ((t (:background ,clouds :foreground ,alizarin))))
 ;;;;; which-func-mode
    `(which-func ((t (:foreground ,purple :background ,purple-light))))
-;; ;;;;; yascroll
-;;    `(yascroll:thumb-text-area ((t (:background ,silver))))
-;;    `(yascroll:thumb-fringe ((t (:background ,silver :foreground ,sun-flower))))
+;;;;; yascroll
+   `(yascroll:thumb-text-area ((t (:background ,green-light))))
+   `(yascroll:thumb-fringe ((t (:background ,green-light :foreground ,green))))
+;;;;; Org
+   `(org-todo ((t (:foreground ,red :weight bold))))
+   `(org-done ((t (:foreground ,green :weight bold))))
+   `(org-agenda-date ((t (:foreground ,cyan))))
+   `(org-table ((t (:foreground ,purple))))
+   `(org-agenda-structure ((t (:foreground ,purple))))
+   `(org-formula ((t (:foreground ,red))))
    ))
 
 ;;; Theme Variables

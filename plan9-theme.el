@@ -557,10 +557,12 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(org-level-8 ((t (:foreground ,fg))))
    `(org-todo ((t (:foreground ,red :weight bold))))
    `(org-done ((t (:foreground ,green :weight bold))))
-   `(org-agenda-date ((t (:foreground ,cyan))))
+   `(org-date ((t (:foreground ,purple))))
    `(org-table ((t (:foreground ,purple))))
-   `(org-agenda-structure ((t (:foreground ,purple))))
    `(org-formula ((t (:foreground ,red))))
+   `(org-special-keyword ((t (:foreground ,cyan))))
+   `(org-agenda-date ((t (:foreground ,cyan))))
+   `(org-agenda-structure ((t (:foreground ,purple))))
    ))
 
 ;;; Theme Variables

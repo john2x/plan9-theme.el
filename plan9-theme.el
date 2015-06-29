@@ -547,10 +547,10 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(yascroll:thumb-text-area ((t (:background ,green-light))))
    `(yascroll:thumb-fringe ((t (:background ,green-light :foreground ,green))))
 ;;;;; Org
-   `(org-level-1 ((t (:height 1.3 :weight bold :underline t :family "Sans Serif"))))
-   `(org-level-2 ((t (:foreground ,blue :height 1.1 :weight bold))))
-   `(org-level-3 ((t (:foreground ,fg))))
-   `(org-level-4 ((t (:foreground ,fg))))
+   `(org-level-1 ((t (:height 1.4 :weight bold :underline t :family "Sans Serif"))))
+   `(org-level-2 ((t (:foreground ,blue :height 1.2 :weight bold))))
+   `(org-level-3 ((t (:foreground ,blue, :weight bold))))
+   `(org-level-4 ((t (:foreground ,fg, :weight bold))))
    `(org-level-5 ((t (:foreground ,fg))))
    `(org-level-6 ((t (:foreground ,fg))))
    `(org-level-7 ((t (:foreground ,fg))))
@@ -563,6 +563,9 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(org-special-keyword ((t (:foreground ,cyan))))
    `(org-agenda-date ((t (:foreground ,cyan))))
    `(org-agenda-structure ((t (:foreground ,purple))))
+   `(org-block ((,class (:foreground ,red :background ,bg-alt))))
+   `(org-block-begin-line ((,class (:foreground ,red :background ,bg-alt :weight bold))))
+   `(org-block-end-line ((,class (:foreground ,red :background ,bg-alt :weight bold))))
    ))
 
 ;;; Theme Variables

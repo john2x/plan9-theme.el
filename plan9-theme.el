@@ -387,28 +387,43 @@ Also bind `class' to ((class color) (min-colors 89))."
 ;;;;; linum-mode
    `(linum ((t (:foreground ,purple :background ,purple-light))))
 ;;;;; magit
-   `(magit-header ((t (:foreground ,cyan :background nil :weight bold))))
-   `(magit-section-title ((t (:foreground ,cyan :background nil :weight bold))))
-   `(magit-branch ((t (:foreground ,fg :background ,yellow-light
-                                   :weight bold
-                                   :box (:line-width 1 :color ,yellow)))))
-   `(magit-item-highlight ((t (:background ,bg-alt))))
-   `(magit-log-author ((t (:foreground ,blue))))
-   `(magit-log-sha1 ((t (:foreground ,yellow :weight bold))))
+   `(magit-section-heading ((t (:foreground ,cyan :weight bold :underline t :height 1.4))))
+   `(magit-section-highlight ((t (:background ,bg-alt))))
+   `(magit-section-heading-selection ((t (:background ,highlight))))
+
+   `(magit-filename ((t (:foreground ,fg))))
+   `(magit-hash ((t (:foreground ,yellow :weight bold))))
    `(magit-tag ((t (:foreground ,purple :weight bold))))
-   `(magit-log-head-label-head ((t (:foreground ,fg :background ,blue-light
-                                                :weight bold
-                                                :box (:line-width 1 :color ,blue)))))
-   `(magit-log-head-label-local ((t (:foreground ,fg :background ,blue-light
-                                                 :weight bold
-                                                :box (:line-width 1 :color ,blue)))))
-   `(magit-log-head-label-default ((t (:foreground ,fg :background ,blue-light
-                                                   :weight bold
-                                                :box (:line-width 1 :color ,blue)))))
-   `(magit-log-head-label-remote ((t (:foreground ,fg :background ,green-light
-                                                  :weight bold
-                                                :box (:line-width 1 :color ,green)))))
-   `(magit-log-head-label-tags ((t (:foreground ,yellow :weight bold))))
+   `(magit-refname ((t (:foreground ,purple :weight bold))))
+   `(magit-head ((t (:foreground ,green :weight bold))))
+
+   `(magit-branch-local ((t (:foreground ,fg :background ,yellow-light
+                                         :weight bold
+                                         :box (:line-width 1 :color ,yellow)))))
+   `(magit-branch-remote ((t (:foreground ,fg :background ,purple-light
+                                          :weight bold
+                                          :box (:line-width 1 :color ,purple)))))
+   `(magit-branch-current ((t (:foreground ,fg :background ,blue-light
+                                          :weight bold
+                                          :box (:line-width 1 :color ,blue)))))
+
+   `(magit-diff-file-heading ((t (:foreground ,fg :weight bold))))
+   `(magit-diff-file-heading-highlight ((t (:background ,bg-alt))))
+   `(magit-diff-hunk-heading ((t (:foreground ,blue :weight bold :underline t))))
+   `(magit-diff-hunk-heading-highlight ((t (:background ,blue-light))))
+   `(magit-diff-added ((t (:foreground ,green :background ,green-light))))
+   `(magit-diff-removed ((t (:foreground ,red :background ,red-light))))
+   `(magit-diff-context ((t (:foreground ,fg-light :background nil))))
+   `(magit-diff-added-highlight ((t (:foreground ,green :background ,green-light))))
+   `(magit-diff-removed-highlight ((t (:foreground ,red :background ,red-light))))
+   `(magit-diff-context-highlight ((t (:foreground ,fg-light :background ,bg-alt))))
+   `(magit-diffstat-added ((t (:foreground ,green :background ,green-light :weight bold))))
+   `(magit-diffstat-removed ((t (:foreground ,red :background ,red-light :weight bold))))
+
+   `(magit-log-author ((t (:foreground ,blue :weight bold))))
+   `(magit-log-date ((t (:foreground ,purple :weight bold))))
+   `(magit-log-graph ((t (:foreground ,red :weight bold))))
+
 ;; ;;;;; outline
 ;;    `(outline-1 ((t (:foreground ,green-sea))))
 ;;    `(outline-2 ((t (:foreground ,belize-hole))))

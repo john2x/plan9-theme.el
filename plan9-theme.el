@@ -564,8 +564,8 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(org-agenda-date ((t (:foreground ,cyan))))
    `(org-agenda-structure ((t (:foreground ,purple))))
    `(org-block ((,class (:foreground ,red :background ,bg-alt))))
-   `(org-block-begin-line ((,class (:foreground ,red :weight bold :overline t))))
-   `(org-block-end-line ((,class (:foreground ,red :weight bold :underline t))))
+   `(org-block-begin-line ((,class (:foreground ,red :italic t :overline t))))
+   `(org-block-end-line ((,class (:foreground ,red :italic t :underline t))))
    ))
 
 ;;; Theme Variables

@@ -33,7 +33,7 @@
 ;;; Color Palette
 
 (defvar plan9-colors-alist
-  '(("bg"        . "#F8FBED")
+  '(("bg"        . "#FFFFE8")
     ("bg-alt" . "#F5F4E4")
     ("bg-dark"     . "#eaebd1")
     ("fg"            . "#282828")

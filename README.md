@@ -22,7 +22,7 @@ Screenshots
 
 ![elisp](https://raw.githubusercontent.com/john2x/plan9-theme.el/master/screenshots/elisp.png)
 ![python](https://raw.githubusercontent.com/john2x/plan9-theme.el/master/screenshots/python.png)
-![clojure](https://raw.githubusercontent.com/john2x/plan9-theme.el/master/screenshots/clojure.png)
+![org](https://raw.githubusercontent.com/john2x/plan9-theme.el/master/screenshots/org.png)
 
 [Plan 9]: http://plan9.bell-labs.com/plan9/screenshot.html
 

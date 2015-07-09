@@ -33,8 +33,8 @@
 ;;; Color Palette
 
 (defvar plan9-colors-alist
-  '(("bg"        . "#FFFAE9")
-    ("bg-light" . "#FFF7E0")
+  '(("bg"        . "#F8FBED")
+    ("bg-alt" . "#F5F4E4")
     ("bg-dark"     . "#eaebd1")
     ("fg"            . "#282828")
     ("fg-alt"            . "#B8B09A")
@@ -150,7 +150,7 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(ledger-font-payee-uncleared-face ((t (:foreground ,purple))))
    `(ledger-font-payee-cleared-face ((t (:foreground ,fg))))
    `(ledger-font-payee-pending-face ((t (:foreground ,yellow))))
-   `(ledger-font-xact-highlight-face ((t (:background ,bg-light))))
+   `(ledger-font-xact-highlight-face ((t (:background ,bg-alt))))
 ;;;; Third-party
 ;;;;; ace-jump
    ;; `(ace-jump-face-background
@@ -369,7 +369,7 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(hl-line ((,class (:background ,highlight)) ; old emacsen
               (t :weight bold)))
 ;;;;; hl-sexp
-   `(hl-sexp-face ((,class (:background ,bg-light))
+   `(hl-sexp-face ((,class (:background ,bg-alt))
                    (t :weight bold)))
 ;;;;; ido-mode
    `(ido-first-match ((t (:foreground ,fg :weight bold))))
@@ -390,7 +390,7 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(linum ((t (:foreground ,purple :background ,purple-light))))
 ;;;;; magit
    `(magit-section-heading ((t (:foreground ,cyan :weight bold :underline t :height 1.4))))
-   `(magit-section-highlight ((t (:background ,bg-light))))
+   `(magit-section-highlight ((t (:background ,bg-alt))))
    `(magit-section-heading-selection ((t (:background ,highlight))))
 
    `(magit-filename ((t (:foreground ,fg))))
@@ -410,7 +410,7 @@ Also bind `class' to ((class color) (min-colors 89))."
                                           :box (:line-width 1 :color ,blue)))))
 
    `(magit-diff-file-heading ((t (:foreground ,fg :weight bold))))
-   `(magit-diff-file-heading-highlight ((t (:background ,bg-light))))
+   `(magit-diff-file-heading-highlight ((t (:background ,bg-alt))))
    `(magit-diff-hunk-heading ((t (:foreground ,blue :weight bold :underline t))))
    `(magit-diff-hunk-heading-highlight ((t (:background ,blue-light))))
    `(magit-diff-added ((t (:foreground ,green :background ,green-light))))
@@ -418,7 +418,7 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(magit-diff-context ((t (:foreground ,fg-light :background nil))))
    `(magit-diff-added-highlight ((t (:foreground ,green :background ,green-light))))
    `(magit-diff-removed-highlight ((t (:foreground ,red :background ,red-light))))
-   `(magit-diff-context-highlight ((t (:foreground ,fg-light :background ,bg-light))))
+   `(magit-diff-context-highlight ((t (:foreground ,fg-light :background ,bg-alt))))
    `(magit-diffstat-added ((t (:foreground ,green :background ,green-light :weight bold))))
    `(magit-diffstat-removed ((t (:foreground ,red :background ,red-light :weight bold))))
 
@@ -539,13 +539,13 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(web-mode-string-face ((t (:inherit ,font-lock-string-face))))
    `(web-mode-type-face ((t (:inherit ,font-lock-type-face))))
    `(web-mode-variable-name-face ((t (:inherit ,font-lock-variable-name-face))))
-   `(web-mode-server-background-face ((t (:background ,bg-light))))
+   `(web-mode-server-background-face ((t (:background ,bg-alt))))
    `(web-mode-server-comment-face ((t (:inherit web-mode-comment-face))))
    `(web-mode-server-string-face ((t (:foreground ,red))))
    `(web-mode-symbol-face ((t (:inherit font-lock-constant-face))))
    `(web-mode-warning-face ((t (:inherit font-lock-warning-face))))
    `(web-mode-whitespaces-face ((t (:background ,red-light))))
-   `(web-mode-block-face ((t (:background ,bg-light))))
+   `(web-mode-block-face ((t (:background ,bg-alt))))
    `(web-mode-current-element-highlight-face ((t (:background ,bg-dark))))
 ;; ;;;;; whitespace-mode
 ;;    `(whitespace-space ((t (:background ,clouds :foreground ,sun-flower))))
@@ -565,9 +565,9 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(yascroll:thumb-fringe ((t (:background ,green-light :foreground ,green))))
 ;;;;; Org
    `(org-level-1 ((t (:height 1.4 :weight bold :underline t :family "Sans Serif"))))
-   `(org-level-2 ((t (:height 1.2 :weight bold :background ,bg-light))))
-   `(org-level-3 ((t (:background ,bg-light))))
-   `(org-level-4 ((t (:background ,bg-light))))
+   `(org-level-2 ((t (:height 1.2 :weight bold :background ,bg-alt))))
+   `(org-level-3 ((t (:background ,bg-alt))))
+   `(org-level-4 ((t (:background ,bg-alt))))
    `(org-level-5 ((t (:foreground ,cyan))))
    `(org-level-6 ((t (:foreground ,cyan))))
    `(org-level-7 ((t (:foreground ,cyan))))
@@ -581,7 +581,7 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(org-agenda-date ((t (:foreground ,cyan))))
    `(org-agenda-structure ((t (:foreground ,purple))))
    `(org-block ((,class (:foreground ,red))))
-   `(org-block-background ((,class (:background ,bg-light))))
+   `(org-block-background ((,class (:background ,bg-alt))))
    `(org-block-begin-line ((,class (:foreground ,fg-alt :background ,bg-dark :italic t :overline t :underline t))))
    `(org-block-end-line ((,class (:foreground ,fg-alt :background ,bg-dark :italic t :underline t :overline t))))
    ))

@@ -33,10 +33,11 @@
 ;;; Color Palette
 
 (defvar plan9-colors-alist
-  '(("bg"        . "#FFF9E2")
-    ("bg-light" . "#FFF6D8")
+  '(("bg"        . "#FFFAE9")
+    ("bg-light" . "#FFF7E0")
     ("bg-dark"     . "#eaebd1")
     ("fg"            . "#282828")
+    ("fg-alt"            . "#B8B09A")
     ("fg-light"      . "#4d4d4d")
     ("highlight"     . "#e8eb98")
 
@@ -564,15 +565,15 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(yascroll:thumb-fringe ((t (:background ,green-light :foreground ,green))))
 ;;;;; Org
    `(org-level-1 ((t (:height 1.4 :weight bold :underline t :family "Sans Serif"))))
-   `(org-level-2 ((t (:foreground ,blue :height 1.2 :weight bold :background ,purple-light))))
-   `(org-level-3 ((t (:foreground ,purple, :weight bold :background ,purple-light))))
-   `(org-level-4 ((t (:foreground ,cyan, :weight bold :background ,purple-light))))
+   `(org-level-2 ((t (:height 1.2 :weight bold :background ,bg-light))))
+   `(org-level-3 ((t (:background ,bg-light))))
+   `(org-level-4 ((t (:background ,bg-light))))
    `(org-level-5 ((t (:foreground ,cyan))))
    `(org-level-6 ((t (:foreground ,cyan))))
    `(org-level-7 ((t (:foreground ,cyan))))
    `(org-level-8 ((t (:foreground ,cyan))))
-   `(org-todo ((t (:foreground ,red :weight bold))))
-   `(org-done ((t (:foreground ,green :weight bold))))
+   `(org-todo ((t (:foreground ,red :background ,red-light :weight bold))))
+   `(org-done ((t (:foreground ,green :background ,green-light :weight bold))))
    `(org-date ((t (:foreground ,purple))))
    `(org-table ((t (:foreground ,purple))))
    `(org-formula ((t (:foreground ,red))))
@@ -581,8 +582,8 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(org-agenda-structure ((t (:foreground ,purple))))
    `(org-block ((,class (:foreground ,red))))
    `(org-block-background ((,class (:background ,bg-light))))
-   `(org-block-begin-line ((,class (:foreground ,red :background ,bg-dark :italic t :overline t :underline t))))
-   `(org-block-end-line ((,class (:foreground ,red :background ,bg-dark :italic t :underline t :overline t))))
+   `(org-block-begin-line ((,class (:foreground ,fg-alt :background ,bg-dark :italic t :overline t :underline t))))
+   `(org-block-end-line ((,class (:foreground ,fg-alt :background ,bg-dark :italic t :underline t :overline t))))
    ))
 
 ;;; Theme Variables

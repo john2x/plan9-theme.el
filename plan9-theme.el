@@ -642,4 +642,4 @@ Also bind `class' to ((class color) (min-colors 89))."
 ;; no-byte-compile: t
 ;; indent-tabs-mode: nil
 ;; End:
-;;; flatui-theme.el ends here
+;;; plan9-theme.el ends here

@@ -38,7 +38,7 @@
     ("bg-dark"     . "#eaebd1")
     ("fg"            . "#282828")
     ("fg-alt"            . "#B8B09A")
-    ("fg-light"      . "#4d4d4d")
+    ("fg-light"      . "#CCCCB7")
     ("highlight"     . "#e8eb98")
 
     ("cyan"          . "#4fa8a8")
@@ -425,7 +425,8 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(magit-log-author ((t (:foreground ,blue :weight bold))))
    `(magit-log-date ((t (:foreground ,purple :weight bold))))
    `(magit-log-graph ((t (:foreground ,red :weight bold))))
-
+;;;;; paren-face
+   `(parenthesis ((t (:foreground "#CCCCB7"))))
 ;; ;;;;; outline
 ;;    `(outline-1 ((t (:foreground ,green-sea))))
 ;;    `(outline-2 ((t (:foreground ,belize-hole))))
@@ -433,10 +434,10 @@ Also bind `class' to ((class color) (min-colors 89))."
 ;;    `(outline-4 ((t (:foreground ,orange))))
 ;;    `(outline-5 ((t (:foreground ,pumpkin))))
 ;;    `(outline-6 ((t (:foreground ,pomegranate))))
-;; ;;;;; rainbow-delimiters
-;;    `(rainbow-delimiters-depth-1-face ((t (:foreground ,wet-asphalt))))
-;;    `(rainbow-delimiters-depth-2-face ((t (:foreground ,turquoise))))
-;;    `(rainbow-delimiters-depth-3-face ((t (:foreground ,emerald))))
+;;;;; rainbow-delimiters
+   `(rainbow-delimiters-depth-1-face ((t (:foreground ,green))))
+   `(rainbow-delimiters-depth-2-face ((t (:foreground ,blue))))
+   `(rainbow-delimiters-depth-3-face ((t (:foreground ,red))))
 ;;    `(rainbow-delimiters-depth-4-face ((t (:foreground ,peter-river))))
 ;;    `(rainbow-delimiters-depth-5-face ((t (:foreground ,amethyst))))
 ;;    `(rainbow-delimiters-depth-6-face ((t (:foreground ,sun-flower))))
@@ -459,13 +460,13 @@ Also bind `class' to ((class color) (min-colors 89))."
                            :box (:line-width -1 :style released-button)))
       (t :inverse-video t)))
    `(mode-line-inactive
-     ((t (:foreground ,fg-light
+     ((t (:foreground ,fg
                       :background ,cyan
                       :box (:line-width -1 :style pressed-button)))))
    `(mode-line-buffer-id ((t (:foreground ,red :weight bold))))
    `(sml/global ((t (:foreground ,fg))))
    `(sml/modes ((t (:foreground ,green :background ,green-light))))
-   `(sml/filename ((t (:foreground ,fg))))
+   `(sml/filename ((t (:foreground ,red))))
    `(sml/folder ((t (:foreground ,fg))))
    `(sml/prefix ((t (:foreground ,fg))))
    `(sml/read-only ((t (:foreground ,fg))))
@@ -600,8 +601,8 @@ Also bind `class' to ((class color) (min-colors 89))."
 ;;;;; fill-column-indicator
    `(fci-rule-color ,yellow-light)
 ;;;;; highlight-parentheses
-   `(hl-paren-colors '(,bg ,bg ,red))
-   `(hl-paren-background-colors '(,blue ,green nil))
+   `(hl-paren-colors '(,green ,blue ,red))
+   `(hl-paren-background-colors '(,green-light ,blue-light ,red-light))
 ;;;;; sml-mode-line
    `(sml/active-foreground-color ,fg)
    `(sml/active-background-color ,cyan-light)

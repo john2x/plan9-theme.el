@@ -120,7 +120,7 @@ Also bind `class' to ((class color) (min-colors 89))."
 ;;;;; isearch
    `(isearch ((t (:foreground ,fg :weight bold :background ,cyan-light))))
    `(isearch-fail ((t (:foreground ,fg :weight bold :background ,red))))
-   `(lazy-highlight ((t (:foreground ,fg :weight bold :background ,cyan))))
+   `(lazy-highlight ((t (:foreground ,fg :weight bold :background ,blue-light))))
 
    `(menu ((t (:foreground ,bg :background ,fg))))
    `(minibuffer-prompt ((t (:foreground ,fg :weight bold))))

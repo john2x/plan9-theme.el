@@ -33,12 +33,14 @@
 ;;; Color Palette
 
 (defvar plan9-colors-alist
-  '(("bg"        . "#FFFFE8")
-    ("bg-alt" . "#F5F4E4")
-    ("bg-dark"     . "#eaebd1")
+  '(("bg"            . "#FFFFE8")
+    ("bg-alt"        . "#F5F4E4")
+    ("bg-dark"       . "#eaebd1")
+
     ("fg"            . "#282828")
-    ("fg-alt"            . "#B8B09A")
+    ("fg-alt"        . "#B8B09A")
     ("fg-light"      . "#CCCCB7")
+
     ("highlight"     . "#e8eb98")
 
     ("cyan"          . "#4fa8a8")
@@ -391,7 +393,7 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(js2-function-param ((t (:foreground ,fg))))
    `(js2-external-variable ((t (:foreground ,cyan))))
 ;;;;; linum-mode
-   `(linum ((t (:foreground ,purple :background ,purple-light))))
+   `(linum ((t (:foreground ,fg-light))))
 ;;;;; magit
    `(magit-section-heading ((t (:foreground ,cyan :weight bold :underline t :height 1.4))))
    `(magit-section-highlight ((t (:background ,bg-alt))))

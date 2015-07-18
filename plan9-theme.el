@@ -286,6 +286,17 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(evil-search-highlight-persist-highlight-face ((t (:inherit lazy-highlight))))
 ;;;;; flx
    `(flx-highlight-face ((t (:foreground ,yellow :weight bold))))
+;;;;; company
+   `(company-tooltip ((t (:background ,green-light))))
+   `(company-tooltip-selection ((t (:background ,cyan-light))))
+   `(company-tooltip-mouse ((t (:background ,blue-light))))
+   `(company-tooltip-search ((t (:foreground ,red))))
+   `(company-tooltip-common ((t (:foreground ,red :background ,green-light))))
+   `(company-tooltip-annotation ((t (:foreground ,green :background ,green-light))))
+   `(company-scrollbar-fg ((t (:background ,red))))
+   `(company-scrollbar-bg ((t (:background ,red-light))))
+   `(company-preview ((t (:foreground ,fg :background ,cyan-light))))
+   `(company-preview-common ((t (:foreground ,fg :background ,cyan-light))))
 ;;;; flycheck
    `(flycheck-error
      ((((supports :underline (:style wave)))

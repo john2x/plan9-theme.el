@@ -442,6 +442,8 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(magit-log-author ((t (:foreground ,blue :weight bold))))
    `(magit-log-date ((t (:foreground ,purple :weight bold))))
    `(magit-log-graph ((t (:foreground ,red :weight bold))))
+
+   `(magit-blame-heading ((t (:foreground ,fg-light :background ,bg-alt))))
 ;;;;; paren-face
    `(parenthesis ((t (:foreground "#CCCCB7"))))
 ;; ;;;;; outline

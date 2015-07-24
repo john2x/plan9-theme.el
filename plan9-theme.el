@@ -263,8 +263,8 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(erc-notice-face ((t (:foreground ,fg-light))))
    `(erc-highlight-face ((t (:background ,highlight))))
 
-   `(erc-input-face ((t (:foreground ,fg :background ,bg-alt))))
-   `(erc-current-nick-face ((t (:foreground ,cyan :background ,cyan-light :weight bold))))
+   `(erc-input-face ((t (:foreground ,fg :background ,purple-light))))
+   `(erc-current-nick-face ((t (:foreground ,fg :background ,cyan-light :weight bold))))
    `(erc-nick-default-face ((t (:foreground ,fg :background ,bg-dark))))
    `(erc-my-nick-face ((t (:foreground ,fg :background ,cyan-light :weight bold))))
    `(erc-nick-msg-face ((t (:inherit erc-default))))
@@ -609,10 +609,10 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(org-special-keyword ((t (:foreground ,cyan))))
    `(org-agenda-date ((t (:foreground ,cyan))))
    `(org-agenda-structure ((t (:foreground ,purple))))
-   `(org-block ((,class (:foreground ,red))))
-   `(org-block-background ((,class (:background ,bg-alt))))
-   `(org-block-begin-line ((,class (:foreground ,fg-alt :background ,bg-dark :italic t :overline t :underline t))))
-   `(org-block-end-line ((,class (:foreground ,fg-alt :background ,bg-dark :italic t :underline t :overline t))))
+   `(org-block ((t (:foreground ,red))))
+   `(org-block-background ((t (:background ,bg-alt))))
+   `(org-block-begin-line ((t (:foreground ,fg-alt :background ,bg-dark :italic t :overline t :underline t))))
+   `(org-block-end-line ((t (:foreground ,fg-alt :background ,bg-dark :italic t :underline t :overline t))))
    ))
 
 ;;; Theme Variables

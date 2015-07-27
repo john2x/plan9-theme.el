@@ -396,6 +396,10 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(ido-only-match ((t (:foreground ,fg :weight bold))))
    `(ido-subdir ((t (:foreground ,blue))))
    `(ido-indicator ((t (:foreground ,yellow))))
+;;;;; ido-vertical
+   `(ido-vertical-first-match-face ((t (:foreground ,fg :background ,cyan-light :weight bold))))
+   `(ido-vertical-only-match-face ((t (:foreground ,red :background ,red-light :weight bold))))
+   `(ido-vertical-match-face ((t (:foreground ,fg :background ,green-light :weight bold))))
 ;;;;; indent-guide
    `(indent-guide-face ((t (:foreground ,highlight))))
 ;;;;; js2-mode

@@ -263,9 +263,9 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(erc-notice-face ((t (:foreground ,fg-light))))
    `(erc-highlight-face ((t (:background ,highlight))))
 
-   `(erc-input-face ((t (:foreground ,fg :background ,purple-light))))
+   `(erc-input-face ((t (:foreground ,fg :height 1.1 :background ,purple-light))))
    `(erc-current-nick-face ((t (:foreground ,fg :background ,cyan-light :weight bold))))
-   `(erc-nick-default-face ((t (:foreground ,fg :background ,bg-dark))))
+   ;;`(erc-nick-default-face ((t (:foreground ,fg :background ,bg-dark))))
    `(erc-my-nick-face ((t (:foreground ,fg :background ,cyan-light :weight bold))))
    `(erc-nick-msg-face ((t (:inherit erc-default))))
    `(erc-fool-face ((t (:inherit erc-default))))
@@ -487,7 +487,7 @@ Also bind `class' to ((class color) (min-colors 89))."
       (t :inverse-video t)))
    `(mode-line-inactive
      ((t (:foreground ,fg
-                      :background ,cyan
+                      :background ,bg-dark
                       :box (:line-width -1 :style pressed-button)))))
    `(mode-line-buffer-id ((t (:foreground ,red :weight bold))))
    `(sml/global ((t (:foreground ,fg))))

@@ -34,8 +34,8 @@
 
 (defvar plan9-colors-alist
   '(("bg"            . "#FFFFE8")
-    ("bg-alt"        . "#F5F4E4")
-    ("bg-dark"       . "#eaebd1")
+    ("bg-alt"        . "#FFFFD8")
+    ("bg-dark"       . "#E5E5D0")
 
     ("fg"            . "#282828")
     ("fg-alt"        . "#B8B09A")

@@ -384,9 +384,9 @@ Also bind `class' to ((class color) (min-colors 89))."
     `(highlight-symbol-face ((t (:background ,bg-dark :underline t))))
 
 ;;;;; hl-line-mode
-   `(hl-line-face ((,class (:background ,highlight))
+   `(hl-line-face ((,class (:background ,bg-alt))
                    (t :weight bold)))
-   `(hl-line ((,class (:background ,highlight)) ; old emacsen
+   `(hl-line ((,class (:background ,bg-alt)) ; old emacsen
               (t :weight bold)))
 ;;;;; hl-sexp
    `(hl-sexp-face ((,class (:background ,bg-alt))

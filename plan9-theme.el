@@ -230,6 +230,7 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(diredp-read-priv ((t (:foreground ,fg))))
    `(diredp-symlink ((t (:foreground ,fg :background ,blue-light))))
    `(diredp-write-priv ((t (:foreground ,fg))))
+   `(diredp-dir-name ((t (:foreground ,blue :background ,blue-light :weight bold))))
    `(dired-subtree-depth-1-face ((t (:background ,bg))))
    `(dired-subtree-depth-2-face ((t (:background ,bg))))
    `(dired-subtree-depth-3-face ((t (:background ,bg))))

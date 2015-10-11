@@ -593,9 +593,9 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(yascroll:thumb-fringe ((t (:background ,green-light :foreground ,green))))
 ;;;;; Org
    `(org-level-1 ((t (:height 1.4 :weight bold :underline t :family "Sans Serif" :background ,bg-alt))))
-   `(org-level-2 ((t (:height 1.2 :weight bold :background ,bg-alt))))
-   `(org-level-3 ((t (:background ,bg-alt :weight bold))))
-   `(org-level-4 ((t (:background ,bg-alt))))
+   `(org-level-2 ((t (:height 1.2 :weight bold :foreground ,blue :background ,bg-alt))))
+   `(org-level-3 ((t (:foreground ,blue :background ,bg-alt :weight bold))))
+   `(org-level-4 ((t (:foreground ,purple :background ,bg-alt))))
    `(org-level-5 ((t (:background ,bg-alt :foreground ,fg-alt :weight bold))))
    `(org-level-6 ((t (:background ,bg-alt :foreground ,fg-alt))))
    `(org-level-7 ((t (:background ,bg-alt :foreground ,fg-alt))))

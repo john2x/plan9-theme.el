@@ -618,6 +618,18 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(org-block-background ((t (:background ,bg-alt))))
    `(org-block-begin-line ((t (:foreground ,fg-alt :background ,bg-dark :italic t :overline t :underline t))))
    `(org-block-end-line ((t (:foreground ,fg-alt :background ,bg-dark :italic t :underline t :overline t))))
+
+;;;;; mu4e, mail
+   `(mu4e-header-highlight-face ((t (:inherit region))))
+   `(mu4e-unread-face ((t (:foreground ,blue :weight bold))))
+   `(mu4e-flagged-face ((t (:foreground ,red :background ,red-light :weight bold))))
+   `(mu4e-compose-separator-face ((t (:foreground ,green))))
+   `(mu4e-header-value-face ((t (:foreground ,fg))))
+   `(message-header-name ((t (:foreground ,purple :weight bold))))
+   `(message-header-to ((t (:foreground ,blue))))
+   `(message-header-subject ((t (:foreground ,blue))))
+   `(message-header-other ((t (:foreground ,blue))))
+   `(message-cited-text ((t (:inherit font-lock-comment-face))))
    ))
 
 ;;; Theme Variables

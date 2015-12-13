@@ -146,6 +146,9 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(font-lock-variable-name-face ((t (:foreground ,cyan))))
    `(font-lock-warning-face ((t (:foreground ,red :weight bold))))
 
+ ;;;; table
+   `(table-cell ((t (:background ,bg-alt))))
+
    ;; `(c-annotation-face ((t (:inherit font-lock-constant-face))))
  ;;;; ledger
    `(ledger-font-directive-face ((t (:foreground ,cyan))))

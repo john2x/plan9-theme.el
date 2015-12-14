@@ -37,7 +37,7 @@
     ("bg-alt"        . "#FFFFD8")
     ("bg-dark"       . "#E5E5D0")
 
-    ("fg"            . "#282828")
+    ("fg"            . "#424242")
     ("fg-alt"        . "#B8B09A")
     ("fg-light"      . "#CCCCB7")
 
@@ -439,6 +439,7 @@ Also bind `class' to ((class color) (min-colors 89))."
 
    `(magit-diff-file-heading ((t (:foreground ,fg :weight bold))))
    `(magit-diff-file-heading-highlight ((t (:background ,bg-alt))))
+   `(magit-diff-file-heading-selection ((t (:foreground ,red :background ,highlight))))
    `(magit-diff-hunk-heading ((t (:foreground ,blue :weight bold :underline t))))
    `(magit-diff-hunk-heading-highlight ((t (:background ,blue-light))))
    `(magit-diff-added ((t (:foreground ,green :background ,green-light))))

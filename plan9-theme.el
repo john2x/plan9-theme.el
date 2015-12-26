@@ -180,6 +180,8 @@ Also bind `class' to ((class color) (min-colors 89))."
    ;; `(bm-fringe-face ((t (:background ,zenburn-yellow-1 :foreground ,zenburn-bg))))
    ;; `(bm-fringe-persistent-face ((t (:background ,zenburn-green-1 :foreground ,zenburn-bg))))
    ;; `(bm-persistent-face ((t (:background ,zenburn-green-1 :foreground ,zenburn-bg))))
+;;;; clojure-mode
+   `(clojure-interop-method-face ((t (:inherit font-lock-function-name-face))))
 ;;;; clojure-test-mode
    `(clojure-test-failure-face ((t (:foreground ,red :weight bold :underline t))))
    `(clojure-test-error-face ((t (:foreground ,red :weight bold :underline t))))

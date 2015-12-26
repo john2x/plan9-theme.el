@@ -406,6 +406,12 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(ido-vertical-match-face ((t (:foreground ,fg :background ,green-light :weight bold))))
 ;;;;; indent-guide
    `(indent-guide-face ((t (:foreground ,highlight))))
+;;;;; ivy
+   `(ivy-current-match ((t (:background ,highlight))))
+   `(ivy-minibuffer-match-face-1 ((t (:background ,bg-alt))))
+   `(ivy-minibuffer-match-face-2 ((t (:background ,cyan-light))))
+   `(ivy-minibuffer-match-face-3 ((t (:background ,purple-light))))
+   `(ivy-minibuffer-match-face-3 ((t (:background ,blue-light))))
 ;;;;; js2-mode
    `(js2-warning ((t (:underline ,yellow))))
    `(js2-error ((t (:foreground ,red :weight bold))))

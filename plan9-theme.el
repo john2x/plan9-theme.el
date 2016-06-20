@@ -39,6 +39,7 @@
 
     ("fg"            . "#424242")
     ("fg-alt"        . "#B8B09A")
+    ("fg-alt-dark"   . "#988d6d")
     ("fg-light"      . "#CCCCB7")
 
     ("highlight"     . "#e8eb98")
@@ -604,11 +605,14 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(yascroll:thumb-text-area ((t (:background ,green-light))))
    `(yascroll:thumb-fringe ((t (:background ,green-light :foreground ,green))))
 ;;;;; Org
-   `(org-level-1 ((t (:height 1.4 :weight bold :underline t :family "Sans Serif"))))
-   `(org-level-2 ((t (:height 1.2 :weight bold :foreground ,blue))))
-   `(org-level-3 ((t (:foreground ,blue :weight bold))))
-   `(org-level-4 ((t (:foreground ,purple))))
-   `(org-level-5 ((t (:foreground ,fg-alt :weight bold))))
+   `(org-level-1 ((t (:height 1.4 :weight bold :background ,bg-dark
+                              :family "Sans Serif"
+                              :box (:line-width 1 :style released-button)))))
+   `(org-level-2 ((t (:height 1.2 :background ,bg-dark
+                              :box (:line-width 1 :style released-button)))))
+   `(org-level-3 ((t (:weight bold))))
+   `(org-level-4 ((t (:foreground ,fg-alt-dark :weight bold))))
+   `(org-level-5 ((t (:foreground ,fg-alt-dark))))
    `(org-level-6 ((t (:foreground ,fg-alt))))
    `(org-level-7 ((t (:foreground ,fg-alt))))
    `(org-level-8 ((t (:foreground ,fg-alt))))
@@ -616,8 +620,10 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(org-document-info ((t (:foreground ,cyan :weight bold))))
    `(org-document-info-keyword ((t (:foreground ,cyan))))
    `(org-document-title ((t (:foreground ,fg :height 1.5 :weight bold :family "Sans Serif" :underline t))))
-   `(org-todo ((t (:foreground ,yellow :background ,bg-alt :weight bold))))
-   `(org-done ((t (:foreground ,green :background ,green-light :weight bold))))
+   `(org-todo ((t (:foreground ,yellow :background ,bg-alt :weight bold
+                               :box (:line-width 1 :style released-button)))))
+   `(org-done ((t (:foreground ,green :background ,green-light :weight bold
+                               :box (:style released-button)))))
    `(org-date ((t (:foreground ,purple))))
    `(org-table ((t (:foreground ,purple))))
    `(org-formula ((t (:foreground ,blue :background ,bg-alt))))
@@ -628,11 +634,13 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(org-agenda-structure ((t (:foreground ,purple))))
    `(org-block ((t (:foreground ,red))))
    `(org-block-background ((t (:background ,bg-alt))))
-   `(org-block-begin-line ((t (:foreground ,fg-alt :background ,bg-dark :italic t :overline t :underline t))))
-   `(org-block-end-line ((t (:foreground ,fg-alt :background ,bg-dark :italic t :underline t :overline t))))
+   `(org-block-begin-line ((t (:foreground ,fg-alt :background ,bg-dark
+                               :italic t))))
+   `(org-block-end-line ((t (:foreground ,fg-alt :background ,bg-dark
+                             :italic t))))
 
 ;;;;; mu4e, mail
-   `(mu4e-header-highlight-face ((t (:inherit region))))
+   `(mu4e-header-highlight-face ((t (:background ,highlight))))
    `(mu4e-unread-face ((t (:foreground ,blue :weight bold))))
    `(mu4e-flagged-face ((t (:foreground ,red :background ,red-light :weight bold))))
    `(mu4e-compose-separator-face ((t (:foreground ,green))))

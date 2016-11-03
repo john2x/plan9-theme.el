@@ -587,7 +587,7 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(web-mode-warning-face ((t (:inherit font-lock-warning-face))))
    `(web-mode-whitespaces-face ((t (:background ,red-light))))
    `(web-mode-block-face ((t (:background ,green-light))))
-   `(web-mode-current-element-highlight-face ((t (:background ,bg-dark))))
+   `(web-mode-current-element-highlight-face ((t (:background ,highlight))))
 ;; ;;;;; whitespace-mode
 ;;    `(whitespace-space ((t (:background ,clouds :foreground ,sun-flower))))
 ;;    `(whitespace-hspace ((t (:background ,clouds :foreground ,sun-flower))))

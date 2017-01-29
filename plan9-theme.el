@@ -86,7 +86,7 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(default ((t (:foreground ,fg :background ,bg))))
    `(cursor ((t (:foreground ,bg :background ,fg))))
    `(escape-glyph ((t (:foreground ,cyan-light :bold t))))
-   `(fringe ((t (:foreground ,green :background ,green-light))))
+   `(fringe ((t (:foreground ,fg :background ,bg-dark))))
    `(header-line ((t (:foreground ,purple
                                   :background ,purple-light
                                   :box (:line-width -1 :style released-button)))))
@@ -603,7 +603,7 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(which-func ((t (:foreground ,purple :background ,purple-light))))
 ;;;;; yascroll
    `(yascroll:thumb-text-area ((t (:background ,green-light))))
-   `(yascroll:thumb-fringe ((t (:background ,green-light :foreground ,green))))
+   `(yascroll:thumb-fringe ((t (:background ,highlight :foreground ,bg :style released-button))))
 ;;;;; Org
    `(org-level-1 ((t (:height 1.4 :weight bold :background ,bg-dark
                               :family "Sans Serif"

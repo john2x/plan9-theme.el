@@ -24,11 +24,11 @@ Screenshots
 ![python](https://raw.githubusercontent.com/john2x/plan9-theme.el/master/screenshots/python.png)
 ![org](https://raw.githubusercontent.com/john2x/plan9-theme.el/master/screenshots/org.png)
 
-[Plan 9]: http://plan9.bell-labs.com/plan9/screenshot.html
+[Plan 9]: http://9p.io/plan9/screenshot.html
 
 License
 =======
-    Copyright (C) 2015 John Louis Del Rosario
+    Copyright (C) 2017 John Louis Del Rosario
 
     This program is free software; you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by

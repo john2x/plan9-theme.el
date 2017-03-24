@@ -258,7 +258,7 @@ Also bind `class' to ((class color) (min-colors 89))."
    ;; `(ediff-odd-diff-B ((t (:background ,silver))))
    ;; `(ediff-odd-diff-C ((t (:background ,silver))))
 ;;;;; erc
-   `(erc-default-face ((t (:foreground ,fg :height 1.1))))
+   `(erc-default-face ((t (:foreground ,fg))))
    `(erc-header-line ((t (:inherit header-line))))
    `(erc-action-face ((t (:inherit erc-default-face))))
    `(erc-bold-face ((t (:inherit erc-default-face :weight bold))))
@@ -270,10 +270,10 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(erc-notice-face ((t (:foreground ,fg-light))))
    `(erc-highlight-face ((t (:background ,highlight))))
 
-   `(erc-input-face ((t (:foreground ,fg :height 1.1 :background ,purple-light))))
-   `(erc-current-nick-face ((t (:foreground ,fg :background ,cyan-light :weight bold))))
-   ;;`(erc-nick-default-face ((t (:foreground ,fg :background ,bg-dark))))
-   `(erc-my-nick-face ((t (:foreground ,fg :background ,cyan-light :weight bold))))
+   `(erc-input-face ((t (:foreground ,fg :background ,purple-light))))
+   `(erc-current-nick-face ((t (:foreground ,fg :background ,cyan-light :weight bold :box (:line-width 1 :style released-button)))))
+   `(erc-nick-default-face ((t (:weight bold :background ,bg-alt))))
+   `(erc-my-nick-face ((t (:foreground ,fg :background ,cyan-light :weight bold :box (:line-width 1 :style released-button)))))
    `(erc-nick-msg-face ((t (:inherit erc-default))))
    `(erc-fool-face ((t (:inherit erc-default))))
    `(erc-pal-face ((t (:foreground ,purple :weight bold))))

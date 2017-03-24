@@ -295,7 +295,7 @@ Also bind `class' to ((class color) (min-colors 89))."
   ;;;;; evil
    `(evil-search-highlight-persist-highlight-face ((t (:inherit lazy-highlight))))
 ;;;;; flx
-   `(flx-highlight-face ((t (:foreground ,yellow :weight bold))))
+   `(flx-highlight-face ((t (:foreground ,yellow :background ,green-light :weight bold :underline t))))
 ;;;;; company
    `(company-tooltip ((t (:background ,green-light))))
    `(company-tooltip-selection ((t (:background ,cyan-light))))
@@ -406,7 +406,7 @@ Also bind `class' to ((class color) (min-colors 89))."
 ;;;;; ido-vertical
    `(ido-vertical-first-match-face ((t (:foreground ,fg :background ,cyan-light :weight bold))))
    `(ido-vertical-only-match-face ((t (:foreground ,red :background ,red-light :weight bold))))
-   `(ido-vertical-match-face ((t (:foreground ,fg :background ,green-light :weight bold))))
+   `(ido-vertical-match-face ((t (:foreground ,fg :background ,green-light :weight bold :underline t))))
 ;;;;; indent-guide
    `(indent-guide-face ((t (:foreground ,highlight))))
 ;;;;; ivy
@@ -467,6 +467,9 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(magit-blame-heading ((t (:foreground ,fg-light :background ,bg-alt))))
 ;;;;; paren-face
    `(parenthesis ((t (:foreground "#CCCCB7"))))
+;;;;; project-explorer
+   `(pe/file-face ((t (:foreground ,fg))))
+   `(pe/directory-face ((t (:foreground ,blue :weight bold))))
 ;; ;;;;; outline
 ;;    `(outline-1 ((t (:foreground ,green-sea))))
 ;;    `(outline-2 ((t (:foreground ,belize-hole))))
@@ -602,8 +605,8 @@ Also bind `class' to ((class color) (min-colors 89))."
 ;;;;; which-func-mode
    `(which-func ((t (:foreground ,purple :background ,purple-light))))
 ;;;;; yascroll
-   `(yascroll:thumb-text-area ((t (:background ,green-light))))
-   `(yascroll:thumb-fringe ((t (:background ,highlight :foreground ,bg :style released-button))))
+   `(yascroll:thumb-text-area ((t (:background ,highlight))))
+   `(yascroll:thumb-fringe ((t (:background ,bg :foreground ,bg :box (:line-width 1 :style released-button)))))
 ;;;;; Org
    `(org-level-1 ((t (:height 1.4 :weight bold :background ,bg-dark
                               :family "Sans Serif"

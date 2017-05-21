@@ -270,7 +270,7 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(erc-notice-face ((t (:foreground ,fg-light))))
    `(erc-highlight-face ((t (:background ,highlight))))
 
-   `(erc-input-face ((t (:foreground ,fg :background ,purple-light))))
+   `(erc-input-face ((t (:foreground ,fg :background ,bg-alt))))
    `(erc-current-nick-face ((t (:foreground ,fg :background ,cyan-light :weight bold :box (:line-width 1 :style released-button)))))
    `(erc-nick-default-face ((t (:weight bold :background ,bg-alt))))
    `(erc-my-nick-face ((t (:foreground ,fg :background ,cyan-light :weight bold :box (:line-width 1 :style released-button)))))
@@ -521,6 +521,8 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(sml/vc ((t (:foreground ,fg :weight bold))))
    `(sml/vc-edited ((t (:foreground ,red :weight bold))))
    `(sml/git ((t (:foreground ,fg :weight bold))))
+;; sh
+   `(sh-heredoc-face ((t (:foreground ,purple))))
 ;; ;;;;; SLIME
 ;;    `(slime-repl-output-face ((t (:foreground ,midnight-blue))))
 ;;    `(slime-repl-inputed-output-face ((t (:foreground ,wet-asphalt))))
@@ -631,7 +633,7 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(org-table ((t (:foreground ,purple))))
    `(org-formula ((t (:foreground ,blue :background ,bg-alt))))
    `(org-code ((t (:foreground ,red :background ,bg-alt))))
-   `(org-verbatim ((t (:foreground ,fg :background ,bg-alt))))
+   `(org-verbatim ((t (:foreground ,fg :background ,bg-alt :underline t))))
    `(org-special-keyword ((t (:foreground ,cyan))))
    `(org-agenda-date ((t (:foreground ,cyan))))
    `(org-agenda-structure ((t (:foreground ,purple))))

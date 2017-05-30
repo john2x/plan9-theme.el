@@ -579,7 +579,7 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(web-mode-function-name-face ((t (:foreground ,fg :weight bold))))
    `(web-mode-html-attr-name-face ((t (:foreground ,fg))))
    `(web-mode-html-attr-value-face ((t (:inherit ,font-lock-string-face))))
-   `(web-mode-html-tag-face ((t (:foreground ,purple :weight bold))))
+   `(web-mode-html-tag-face ((t (:foreground ,blue))))
    `(web-mode-keyword-face ((t (:inherit ,font-lock-keyword-face))))
    `(web-mode-preprocessor-face ((t (:inherit ,font-lock-preprocessor-face))))
    `(web-mode-string-face ((t (:inherit ,font-lock-string-face))))
@@ -592,7 +592,7 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(web-mode-warning-face ((t (:inherit font-lock-warning-face))))
    `(web-mode-whitespaces-face ((t (:background ,red-light))))
    `(web-mode-block-face ((t (:background ,green-light))))
-   `(web-mode-current-element-highlight-face ((t (:background ,highlight))))
+   `(web-mode-current-element-highlight-face ((t (:foreground ,fg :background ,blue-light))))
 ;; ;;;;; whitespace-mode
 ;;    `(whitespace-space ((t (:background ,clouds :foreground ,sun-flower))))
 ;;    `(whitespace-hspace ((t (:background ,clouds :foreground ,sun-flower))))
@@ -644,6 +644,9 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(org-block-end-line ((t (:foreground ,fg-alt :background ,bg-dark
                              :italic t))))
 
+;;;;; origami
+   `(origami-fold-replacement-face ((t (:foreground ,red :background ,red-light
+                                                    :box (:line-width -1)))))
 ;;;;; mu4e, mail
    `(mu4e-header-highlight-face ((t (:background ,highlight))))
    `(mu4e-unread-face ((t (:foreground ,blue :weight bold))))

@@ -257,6 +257,13 @@ Also bind `class' to ((class color) (min-colors 89))."
    ;; `(ediff-odd-diff-Ancestor ((t (:background ,silver))))
    ;; `(ediff-odd-diff-B ((t (:background ,silver))))
    ;; `(ediff-odd-diff-C ((t (:background ,silver))))
+;;;;; elfeed
+   `(elfeed-search-date-face ((t (:foreground ,blue))))
+   `(elfeed-search-title-face ((t (:foreground ,fg))))
+   `(elfeed-search-unread-title-facee ((t (:foreground ,fg))))
+   `(elfeed-search-feed-face ((t (:foreground ,green))))
+   `(elfeed-search-tag-face ((t (:foreground ,red))))
+   `(elfeed-search-unread-count-face ((t (:foreground ,fg))))
 ;;;;; erc
    `(erc-default-face ((t (:foreground ,fg))))
    `(erc-header-line ((t (:inherit header-line))))

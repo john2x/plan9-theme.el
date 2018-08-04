@@ -432,6 +432,10 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(js2-external-variable ((t (:foreground ,cyan))))
 ;;;;; linum-mode
    `(linum ((t (:foreground ,fg-light))))
+;;;;; lsp-mode
+   `(lsp-face-highlight-textual ((t (:background ,bg-dark))))
+   `(lsp-face-highlight-read ((t (:background ,purple-light))))
+   `(lsp-face-highlight-write ((t (:background ,green-light))))
 ;;;;; magit
    `(magit-section-heading ((t (:foreground ,cyan :weight bold :underline t :height 1.4))))
    `(magit-section-highlight ((t (:background ,bg-alt))))
